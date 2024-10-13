@@ -1,0 +1,238 @@
+/* App.css */
+
+/************ Custom Font ************/
+@font-face {
+  font-family: Centra;
+  src: url('./assets/font/CentraNo2-Bold.ttf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: Centra;
+  src: url('./assets/font/CentraNo2-Medium.ttf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: Centra;
+  src: url('./assets/font/CentraNo2-Book.ttf');
+  font-weight: 400;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: transparent; /* Make the background transparent */
+  transition: background-color 0.3s ease;
+  position: fixed; /* Fixed position to keep it on top */
+  width: 100%; /* Full width */
+  top: 0; /* Align to top */
+  z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.8); /* Slightly transparent black when scrolled */
+}
+
+.navbar-brand img {
+  width: 50px;
+}
+
+.navbar-nav .nav-link {
+  color: white; /* Change link color to white for better visibility on dark background */
+  font-size: medium;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f8d210; /* Highlight color on hover */
+}
+
+.navbar h2 {
+  color: white;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns%3D%27http://www.w3.org/2000/svg%27 fill%3D%27%23ffffff%27 viewBox%3D%270 0 30 30%27%3E%3Cpath stroke%3D%27rgba%280%2C 0%2C 0%2C 0.5%29%27 stroke-linecap%3D%27round%27 stroke-miterlimit%3D%2710%27 stroke-width%3D%272%27 d%3D%27M4 7h22M4 15h22M4 23h22%27/%3E%3C/svg%3E');
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+  .navbar h2 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Banner Section */
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('./assets/img/background.jpg') no-repeat center center/cover;
+  text-align: center;
+  color: white;
+}
+
+.banner h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.banner p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.banner .txt-rotate .wrap {
+  border-right: 0.08em solid #fff;
+  padding-right: 5px;
+}
+
+.banner button {
+  background-color: #f8d210;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.banner button:hover {
+  background-color: #e8c210;
+}
+
+.banner img {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 20px;
+}
+
+/* Animation Visibility Adjustments */
+.animate__animated.animate__fadeIn {
+  animation-duration: 1.5s;
+}
+
+.animate__animated.animate__zoomIn {
+  animation-duration: 1.5s;
+}
+
+/* General reset and body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background to contrast with the content */
+}
+
+/* Style for the header to ensure it remains unaffected */
+.header {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+/* Analysis Page Styles */
+
+/* File Upload Section */
+.file-upload-section {
+  background-image: url('./assets/img/background.jpg');
+  background-size: cover;
+  padding: 50px 0;
+}
+
+.file-upload-section h1 {
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Analysis Section */
+.analysis-section {
+  background-image: url('./assets/img/background.jpg');
+  background-size: cover;
+  padding: 50px 0;
+}
+
+/* Form Styling */
+.form-group label {
+  font-weight: bold;
+  color: #333;
+}
+
+.form-control {
+  margin-bottom: 15px;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+
+.btn {
+  margin-right: 10px;
+}
+
+/* Alert Styling */
+.alert {
+  margin-bottom: 20px;
+}
+
+/* Chart Container */
+.chart-container {
+  margin-bottom: 40px;
+}
+
+/* Data Preview Table */
+.data-preview-table {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.data-preview-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-preview-table th, .data-preview-table td {
+  border: 1px solid #dee2e6;
+  padding: 8px;
+  text-align: center;
+}
+
+.data-preview-table th {
+  background-color: #f1f1f1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

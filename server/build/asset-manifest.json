@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.953348a6.css",
+    "main.js": "/static/js/main.2da82b94.js",
+    "static/js/453.5d19aa21.chunk.js": "/static/js/453.5d19aa21.chunk.js",
+    "static/media/image.png": "/static/media/image.2ab3526ba2ae6f33d372.png",
+    "static/media/crime.png": "/static/media/crime.7ab9b7167276c36f4cfc.png",
+    "static/media/background.jpg": "/static/media/background.005f0f38d3d1ffd9b3f9.jpg",
+    "static/media/CentraNo2-Bold.ttf": "/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
+    "static/media/CentraNo2-Medium.ttf": "/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
+    "static/media/CentraNo2-Book.ttf": "/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
+    "index.html": "/index.html",
+    "main.953348a6.css.map": "/static/css/main.953348a6.css.map",
+    "main.2da82b94.js.map": "/static/js/main.2da82b94.js.map",
+    "453.5d19aa21.chunk.js.map": "/static/js/453.5d19aa21.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.953348a6.css",
+    "static/js/main.2da82b94.js"
+  ]
+}
